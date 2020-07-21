@@ -45,7 +45,7 @@ def parse_game(game: chess.pgn.Game, writer, start_play: int=1)->None:
 
         board.push(move)
 
-def main():
+def main()->None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--pgn", type=str, required=True)
     parser.add_argument("--start_ply", type=int, default=1)
